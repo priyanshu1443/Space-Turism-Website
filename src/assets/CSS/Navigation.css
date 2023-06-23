@@ -88,6 +88,11 @@
   margin-right: 13px;
 }
 
+.link {
+  text-decoration: none;
+  color: white;
+}
+
 .selected {
   background: transparent;
   height: 3px;

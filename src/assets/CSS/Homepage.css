@@ -1,8 +1,80 @@
 #homepage {
   width: 100vw;
   height: 100vh;
-  background: url(../home/background-home-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+#homepagedata {
+  position: absolute;
+  bottom: 100px;
+  height: 382px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+#homepagedata section {
+  width: 450px;
+  height: 100%;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#homepagedata section span {
+  color: #D0D6F9;
+  font-size: 28px;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 4.725px;
+}
+
+#homepagedata section h1 {
+  color: #FFF;
+  font-size: 150px;
+  font-family: 'Bellefair', serif;
+  font-weight: 300;
+}
+
+#homepagedata section p {
+  width: 444px;
+  height: 128px;
+  color: #D0D6F9;
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+  line-height: 32px;
+  text-align: left;
+}
+
+#homepagedata div {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  border-radius: 450px;
+}
+
+#homepagedata div:hover {
+  background: rgba(255, 254, 254, 0.1036275252699852);
+}
+
+#homepagedata div .link {
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  color: #0B0D17;
+  font-size: 32px;
+  font-family: 'Bellefair', serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
