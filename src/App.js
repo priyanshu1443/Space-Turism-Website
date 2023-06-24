@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div id="homepage" style={backgroundimg} >
-      <Navigation path={pathchange} />
+      <Navigation path={pathchange} changedata={changedata} />
       <Routes>
         <Route path="/" element={<Homepagedata paths={pathchange} changedata={changedata} />}></Route>
         <Route path="/destination" element={<Destination />}></Route>

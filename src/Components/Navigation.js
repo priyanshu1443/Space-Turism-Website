@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
@@ -10,14 +10,17 @@ import logo from "../assets/shared/logo.svg"
 function Navigation(props) {
   const [select, setselect] = useState(0);
 
-  console.log(props.changedata)
-
   const change_page = (n) => {
     element1[select].style.background = "transparent";
     element1[n].style.background = "white";
     setselect(n);
     props.path()
   }
+
+  useEffect(() => {
+    if (props.changedata === 1) change_page(1);
+  }, [props.changedata])
+
   const element1 = document.getElementsByClassName("selected");
 
   const mouseover = (n) => {
