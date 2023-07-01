@@ -1,9 +1,9 @@
 #destination {
   color: white;
   position: absolute;
-  bottom: 50px;
+  bottom: 5rem;
   width: 100vw;
-  height: 540px;
+  height: 54rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -11,19 +11,19 @@
 
 #destination>div:nth-child(1) {
   height: 100%;
-  width: 509px;
+  width: 50.9rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 #destination #heading {
-  width: 382px;
-  height: 34px;
-  line-height: 34px;
-  font-size: 28px;
+  width: 38.2rem;
+  height: 3.4rem;
+  line-height: 3.4rem;
+  font-size: 2.8rem;
   font-family: "Barlow Condensed";
-  letter-spacing: 4.725px;
+  letter-spacing: .4725rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,14 +39,14 @@
 }
 
 #destination #imgdiv {
-  width: 445px;
-  height: 445px;
+  width: 44.5rem;
+  height: 44.5rem;
   align-self: flex-end;
 }
 
 #destination>div:nth-child(2) {
-  width: 445px;
-  height: 472px;
+  width: 44.5rem;
+  height: 47.2rem;
   align-self: flex-end;
   display: flex;
   flex-direction: column;
@@ -55,8 +55,8 @@
 }
 
 #destination #destination_nav {
-  width: 285px;
-  height: 34px;
+  width: 28.5rem;
+  height: 3.4rem;
 }
 
 #destination #destination_nav ul {
@@ -77,15 +77,15 @@
 
 #destination #destination_nav ul li span {
   color: #D0D6F9;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: "Barlow Condensed";
-  letter-spacing: 2.7px;
+  letter-spacing: .27rem;
   height: 100%;
 }
 
 #destination #destination_nav ul li hr {
   width: 100%;
-  height: 3px;
+  height: .3rem;
   background-color: transparent;
   border: none;
 }
@@ -100,31 +100,31 @@
 
 #destination #destination_name {
   color: white;
-  width: 333px;
-  height: 115px;
-  font-size: 100px;
+  width: 33.3rem;
+  height: 11.5rem;
+  font-size: 10rem;
   font-weight: 300;
   text-transform: uppercase;
   font-family: "Bellefair", serif;
 }
 
 #destination #destination_description {
-  width: 444px;
-  height: 128px;
+  width: 44.4rem;
+  height: 12.8rem;
   color: #D0D6F9;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: "Barlow", serif;
-  line-height: 32px;
+  line-height: 3.2rem;
 }
 
 #destination>div:nth-child(2) hr {
-  border: 1px solid #383B4B;
+  border: 1rem solid #383B4B;
 }
 
 #destination #distace_time {
   display: flex;
   align-items: center;
-  height: 61px;
+  height: 6.1rem;
 }
 
 #destination #distace_time #distance,
@@ -147,16 +147,16 @@
 #destination #distace_time #distance p:nth-child(1),
 #destination #distace_time #time p:nth-child(1) {
   color: #D0D6F9;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-family: 'Barlow Condensed', serif;
-  letter-spacing: 2.362px;
+  letter-spacing: .2362rem;
   text-transform: uppercase;
 }
 
 #destination #distace_time #distance p:nth-child(2),
 #destination #distace_time #time p:nth-child(2) {
   color: #FFF;
-  font-size: 28px;
+  font-size: 2.8rem;
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
 }

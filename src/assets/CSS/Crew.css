@@ -1,0 +1,72 @@
+#crew {
+  color: white;
+  position: absolute;
+  bottom: 0rem;
+  border: .2rem solid red;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 58rem;
+  max-height: 71.2rem;
+}
+
+#crew #crew_details {
+  border: .2rem solid yellow;
+}
+
+#crew #crew_details>div:nth-child(1) {
+  border: .2rem solid pink;
+  width: 28.6rem;
+  height: 3.4rem;
+  line-height: 3.4rem;
+  color: white;
+  font-size: 2.8rem;
+  font-family: 'Barlow Condensed';
+  letter-spacing: .4725rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+#crew #crew_details>div:nth-child(1) span:nth-child(1) {
+  opacity: 0.25;
+  font-weight: 700;
+}
+
+#crew #crew_details>div:nth-child(1) span:nth-child(2) {
+  text-transform: uppercase;
+}
+
+#crew #crew_details>div:nth-child(2) #crew_role {
+  color: #FFF;
+  font-size: 3.2rem;
+  font-family: 'Bellefair';
+  text-transform: uppercase;
+  opacity: 0.5042492151260376;
+}
+
+#crew #crew_details>div:nth-child(2) #crew_name {
+  color: #FFF;
+  font-size: 5.6rem;
+  font-family: 'Bellefair';
+  text-transform: uppercase;
+}
+
+#crew #crew_details>div:nth-child(2) #crew_bio {
+  width: 44.4rem;
+  height: 18rem;
+  color: #D0D6F9;
+  font-size: 1.8rem;
+  font-family: 'Barlow';
+  line-height: 3.2rem;
+}
+
+#crew #crew_details>div:nth-child(3) {
+  border: .2rem solid rgb(210, 115, 6);
+}
+
+#crew #crew_img {
+  border: .2rem solid rgb(95, 156, 60);
+  width: 56.8072rem;
+  /* height: 64.5rem; */
+}
