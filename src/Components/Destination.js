@@ -39,8 +39,8 @@ function Destination() {
           <span>01</span>
           <span>Pick your destination</span>
         </div>
-        <div id="imgdiv">
-          <img src={imgarry[destination]} alt="" />
+        <div id="imgdiv" style={{ backgroundImage: `url(${imgarry[destination]})` }}>
+          {/* <img src={imgarry[destination]} alt="" /> */}
         </div>
       </div>
       <div >

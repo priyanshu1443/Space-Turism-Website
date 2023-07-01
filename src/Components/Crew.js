@@ -8,9 +8,17 @@ import c4 from "../assets/crew/image-anousheh-ansari.png";
 import "../assets/CSS/Crew.css";
 
 export default function Crew() {
-  const [crew, setcrew] = useState(0)
+  const [crew, setcrew] = useState(0);
 
-  const imgages = [c1, c2, c3, c4]
+  const imgages = [c1, c2, c3, c4];
+
+  const crews = document.getElementsByClassName('crews');
+
+  const showcrew = (n) => {
+    crews[crew].classList.remove('active');
+    setcrew(n);
+    crews[n].classList.add('active');
+  }
 
   return (
     <div id="crew">
@@ -25,15 +33,13 @@ export default function Crew() {
           <p id="crew_bio">{data.crew[crew].bio}</p>
         </div>
         <div>
-          <div onClick={() => { setcrew(0) }}>1</div>
-          <div onClick={() => { setcrew(1) }}>2</div>
-          <div onClick={() => { setcrew(2) }}>3</div>
-          <div onClick={() => { setcrew(3) }}>4</div>
+          <span className="crews active" onClick={() => { showcrew(0) }}></span>
+          <span className="crews " onClick={() => { showcrew(1) }}></span>
+          <span className="crews " onClick={() => { showcrew(2) }}></span>
+          <span className="crews " onClick={() => { showcrew(3) }}></span>
         </div>
       </div>
-      <div id="crew_img">
-        {/* <img src={imgages[crew]} alt="" /> */}
-      </div>
+      <div id="crew_img" style={{ backgroundImage: `url(${imgages[crew]})` }}></div>
     </div>
   )
 }
