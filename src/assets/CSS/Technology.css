@@ -1,17 +1,18 @@
 #technology {
   color: white;
-  border: 2px solid red;
   display: flex;
+  justify-content: space-between;
   position: absolute;
   bottom: 5rem;
+  width: 100vw;
 }
 
 #technology>div:nth-child(1) {
-  border: 2px solid rgb(55, 150, 52);
+  width: 58%;
+  padding-left: 5rem;
 }
 
 #technology #heading {
-  border: 2px solid yellow;
   width: 30.5rem;
   height: 3.5rem;
   line-height: 3.5rem;
@@ -36,9 +37,9 @@
 }
 
 #technology #details {
-  border: 2px solid blue;
   display: flex;
   gap: 8rem;
+  margin-top: 13.7rem;
 }
 
 #technology #details #active_technology {
@@ -97,7 +98,7 @@
 }
 
 #technology #details div p {
-  width: 44.4rem;
+  max-width: 44.4rem;
   color: #D0D6F9;
   font-size: 18px;
   font-family: 'Barlow';
@@ -106,6 +107,25 @@
   line-height: 32px;
 }
 
-#technology>div:nth-child(2) {
-  border: 2px solid rgb(19, 114, 107);
+#technology #imgdiv {
+  width: 38%;
+  height: 50.8rem;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+@media(max-width:1025px) {
+  #technology>div:nth-child(1) {
+    padding: 0;
+  }
+
+  #technology #details div p {
+    width: auto;
+  }
+
+  #technology #imgdiv {
+    align-self: flex-end;
+    background-position: bottom;
+  }
 }

@@ -38,9 +38,7 @@ export default function Technology() {
           </div>
         </div>
       </div>
-      <div id="imgdiv">
-        <img src={images[tech]} alt="" />
-      </div>
+      <div id="imgdiv" style={{ backgroundImage: `url(${images[tech]})` }}></div>
     </div>
   )
 }
