@@ -42,7 +42,7 @@ function Navigation(props) {
           <div>
             <ul>
               <li>
-                <span onClick={() => (change_page(0))} onMouseEnter={() => { mouseover(0) }} onMouseLeave={() => { mouseleave(0) }}><span className="nav_number">01</span><Link to="./" className="link">Home</Link></span>
+                <span onClick={() => (change_page(0))} onMouseEnter={() => { mouseover(0) }} onMouseLeave={() => { mouseleave(0) }}><span className="nav_number">01</span><Link onClick={() => (change_page(0))} to="./" className="link">Home</Link></span>
                 <p className="selected" style={{ background: "white" }}></p>
               </li>
               <li>
