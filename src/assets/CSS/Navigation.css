@@ -108,3 +108,30 @@
     margin-left: 4vw;
   }
 }
+
+@media(max-width:800px) {
+  #navigation nav {
+    justify-content: space-between;
+    margin-left: 4rem;
+  }
+
+  #navigation hr {
+    display: none;
+  }
+
+  #navigation nav .navitems {
+    width: auto;
+  }
+
+  #navigation nav .navitems div:nth-child(1) {
+    display: none;
+  }
+
+  #navigation nav .navitems div:nth-child(2) {
+    width: auto;
+  }
+
+  #navigation nav .navitems div:nth-child(2) ul {
+    margin-left: 1rem;
+  }
+}

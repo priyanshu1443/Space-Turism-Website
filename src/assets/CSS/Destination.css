@@ -41,8 +41,6 @@
 #destination #imgdiv {
   width: 44.5rem;
   height: 44.5rem;
-  /* align-self: flex-end; */
-  /* border: 2px solid black; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -119,6 +117,7 @@
   font-size: 1.8rem;
   font-family: "Barlow", serif;
   line-height: 3.2rem;
+  text-align: center;
 }
 
 #destination>div:nth-child(2) hr {
@@ -163,4 +162,45 @@
   font-size: 2.8rem;
   font-family: 'Bellefair', serif;
   text-transform: uppercase;
+}
+
+@media(max-width:800px) {
+  #destination {
+    flex-direction: column;
+    height: 85vh;
+    bottom: 0;
+  }
+
+  #destination>div:nth-child(1) {
+    width: 100vw;
+    align-items: center;
+    height: auto;
+  }
+
+  #destination #heading {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  #destination>div:nth-child(2) {
+    align-self: center;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #destination #destination_description {
+    width: 68rem;
+    height: auto;
+  }
+
+  #destination>div:nth-child(2) hr {
+    width: 68rem;
+  }
+
+  #destination #distace_time {
+    width: 45rem;
+    justify-content: space-between;
+  }
 }

@@ -64,6 +64,7 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 #technology #details #active_technology div:hover {
@@ -122,6 +123,7 @@
 
   #technology #details div p {
     width: auto;
+    height: 29rem;
   }
 
   #technology #imgdiv {
@@ -129,3 +131,5 @@
     background-position: bottom;
   }
 }
+
+@media(max-width:800px) {}
