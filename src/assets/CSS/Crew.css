@@ -140,13 +140,13 @@
   }
 
   #crew #crew_details>div:nth-child(2) #crew_bio {
-    height: 14rem;
+    height: 13rem;
     width: 65rem;
     text-align: center;
   }
 
   #crew #crew_img {
-    height: 50rem;
+    height: 52rem;
     width: 100vw;
   }
 }

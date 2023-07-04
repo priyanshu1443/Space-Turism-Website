@@ -82,7 +82,6 @@
 @media(max-width:800px) {
 
   #homepagedata {
-    border: 2px solid black;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;

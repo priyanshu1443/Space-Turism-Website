@@ -17,12 +17,12 @@
   height: 3.5rem;
   line-height: 3.5rem;
   color: #FFF;
-  font-size: 28px;
+  font-size: 2.8rem;
   font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 4.725px;
+  letter-spacing: .4725rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,7 +63,7 @@
   font-family: 'Bellefair';
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   cursor: pointer;
 }
 
@@ -79,17 +79,17 @@
 
 #technology #details div span {
   color: #D0D6F9;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 2.7px;
+  letter-spacing: .27rem;
 }
 
 #technology #details div h1 {
   color: #FFF;
-  font-size: 56px;
+  font-size: 5.6rem;
   font-family: 'Bellefair';
   font-style: normal;
   font-weight: 400;
@@ -101,11 +101,12 @@
 #technology #details div p {
   max-width: 44.4rem;
   color: #D0D6F9;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 3.2rem;
+  text-align: center;
 }
 
 #technology #imgdiv {
@@ -132,4 +133,63 @@
   }
 }
 
-@media(max-width:800px) {}
+@media(max-width:800px) {
+  #technology {
+    height: 80vh;
+    flex-direction: column-reverse;
+    bottom: 0;
+  }
+
+  #technology>div:nth-child(1) {
+    width: 100vw;
+  }
+
+  #technology #heading {
+    position: absolute;
+    top: 0rem;
+  }
+
+  #technology #details {
+    height: 41rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #technology #details #active_technology {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  #technology #details #active_technology div {
+    align-items: center;
+    justify-content: center;
+  }
+
+  #technology #details div:nth-child(2) {
+    width: 100vw;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #technology #details div p {
+    max-width: 60rem;
+    height: auto;
+  }
+
+  #technology #imgdiv {
+    width: 100vw;
+    height: 50rem;
+    margin-top: 6rem;
+  }
+
+}

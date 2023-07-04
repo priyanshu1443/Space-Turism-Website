@@ -2,14 +2,19 @@ import React from "react";
 import { useState } from "react";
 import '../assets/CSS/Technology.css'
 import data from "../assets/data.json";
-import ti1 from "../assets/technology/image-launch-vehicle-portrait.jpg";
-import ti2 from "../assets/technology/image-spaceport-portrait.jpg";
-import ti3 from "../assets/technology/image-space-capsule-portrait.jpg";
+import pti1 from "../assets/technology/image-launch-vehicle-portrait.jpg";
+import pti2 from "../assets/technology/image-spaceport-portrait.jpg";
+import pti3 from "../assets/technology/image-space-capsule-portrait.jpg";
+
+import lti1 from "../assets/technology/image-launch-vehicle-landscape.jpg";
+import lti2 from "../assets/technology/image-spaceport-landscape.jpg";
+import lti3 from "../assets/technology/image-space-capsule-landscape.jpg";
 
 export default function Technology() {
   const [tech, settech] = useState(0);
 
-  const images = [ti1, ti2, ti3];
+  const pimages = [pti1, pti2, pti3];
+  const limages = [lti1, lti2, lti3];
 
   const activetech = document.getElementsByClassName('activetech');
 
@@ -38,7 +43,7 @@ export default function Technology() {
           </div>
         </div>
       </div>
-      <div id="imgdiv" style={{ backgroundImage: `url(${images[tech]})` }}></div>
+      <div id="imgdiv" style={{ backgroundImage: `url(${window.innerWidth >= 800 ? pimages[tech] : limages[tech]})` }}></div>
     </div>
   )
 }
