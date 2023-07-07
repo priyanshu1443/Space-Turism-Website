@@ -171,7 +171,6 @@
     height: auto;
     flex-direction: column;
     gap: 0rem;
-    /* border: 2px solid black; */
     position: fixed;
     top: 15rem;
     right: 9rem;
