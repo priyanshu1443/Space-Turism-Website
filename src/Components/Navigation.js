@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import hamburgurmenu from "../assets/shared/icon-hamburger.svg";
+import close from "../assets/shared/icon-close.svg";
 
 
 import '../assets/CSS/Navigation.css'
@@ -10,18 +12,39 @@ import logo from "../assets/shared/logo.svg"
 function Navigation(props) {
   const [select, setselect] = useState(0);
 
+
+  const navmenu = (n) => {
+    navitems[0].style.display = `${n === 1 ? 'block' : 'none'}`;
+    document.getElementById('hamburgur').style.display = `${n === 1 ? 'none' : 'block'}`;
+    document.getElementById('close').style.display = `${n === 1 ? 'block' : 'none'}`;
+  }
+
+  window.onresize = () => {
+    if (window.innerWidth < 490) {
+      if (window.innerWidth >= 481) {
+        navitems[0].style.display = 'block';
+        document.getElementById('hamburgur').style.display = "none"
+        document.getElementById('close').style.display = "none"
+      } else {
+        navmenu(0);
+      }
+    }
+  }
+
   const change_page = (n) => {
     element1[select].style.background = "transparent";
     element1[n].style.background = "white";
     setselect(n);
     props.path()
+    if (window.innerWidth < 481) { navmenu(0) };
   }
-
   useEffect(() => {
     if (props.changedata === 1) change_page(1);
   }, [props.changedata])
 
+
   const element1 = document.getElementsByClassName("selected");
+  const navitems = document.getElementsByClassName("navitems");
 
   const mouseover = (n) => {
     if (select !== n) element1[n].style.background = "#979797";
@@ -30,6 +53,7 @@ function Navigation(props) {
     select === n ? element1[n].style.background = "white" : element1[n].style.background = "transparent";
   }
 
+
   return (
     <div id="navigation" >
       <nav>
@@ -37,6 +61,8 @@ function Navigation(props) {
           <img src={logo} alt="logo" />
         </div>
         <hr />
+        <img id="hamburgur" onClick={() => (navmenu(1))} src={`${hamburgurmenu}`} alt="" />
+        <img id="close" onClick={() => (navmenu(0))} src={`${close}`} alt="" />
         <div className="navitems">
           <div> <hr /> </div>
           <div>

@@ -125,7 +125,6 @@
     justify-content: space-around;
     padding: 0;
     align-items: center;
-
   }
 
   #crew #crew_details>div:nth-child(1) {
@@ -148,5 +147,23 @@
   #crew #crew_img {
     height: 52rem;
     width: 100vw;
+  }
+}
+
+@media(max-width:481px) {
+  #crew #crew_details>div:nth-child(1) {
+    width: 100vw;
+    justify-content: center;
+    gap: 2rem;
+    left: 0;
+  }
+
+  #crew #crew_details>div:nth-child(2) #crew_name {
+    width: 100vw;
+    text-align: center;
+  }
+
+  #crew #crew_details>div:nth-child(2) #crew_bio {
+    width: auto;
   }
 }

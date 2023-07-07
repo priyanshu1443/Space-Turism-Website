@@ -204,3 +204,25 @@
     justify-content: space-between;
   }
 }
+
+@media(max-width:481px) {
+  #destination #heading {
+    width: 100vw;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  #destination #imgdiv {
+    width: 250px;
+    height: 250px;
+  }
+
+  #destination #destination_description {
+    width: auto;
+  }
+
+  #destination>div:nth-child(2) hr {
+    width: 100vw;
+  }
+
+}

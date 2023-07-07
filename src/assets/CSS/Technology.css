@@ -192,3 +192,11 @@
     margin-top: 6rem;
   }
 }
+
+@media(max-width:481px) {
+  #technology #heading {
+    width: 100vw;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
