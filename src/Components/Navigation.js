@@ -40,7 +40,7 @@ function Navigation(props) {
   }
   useEffect(() => {
     if (props.changedata === 1) change_page(1);
-  }, [props.changedata])
+  })
 
 
   const element1 = document.getElementsByClassName("selected");
